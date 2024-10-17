@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Typography Practice</title>
+    
+    <!-- Підключення нестандартного шрифту через @font-face -->
+    <style>
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('fonts/Refile.otf') format('truetype');
+        }
+    </style>
+
+    
+    <!-- Підключення Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Підключення іконкового шрифту Line Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="custom-font">Welcome to Web Typography</h1>
+        <!-- Опис шрифту CustomFont -->
+        <p class="font-description">This heading uses a custom font loaded through <strong>@font-face</strong>. The font file is stored locally in the <code>fonts</code> directory.</p>
+        
+        <nav>
+            <ul class="lobster-font">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Опис шрифту Google Font для навігації -->
+        <p class="font-description">The navigation menu now uses <strong>Lobster</strong>, a Google Font loaded through a link in the <code>&lt;head&gt;</code> section.</p>
+    </header>
+
+    <section class="content">
+        <h2 class="google-font">Explore the World of Fonts</h2>
+        <p class="google-font">Web typography plays a crucial role in enhancing the user experience on any website. Learn how to integrate custom and Google fonts.</p>
+        <!-- Опис шрифту Google Font (Roboto) -->
+        <p class="font-description">This section uses <strong>Roboto</strong>, a Google Font that is loaded through a link in the <code>&lt;head&gt;</code> section. It is applied to both the heading and the body text in this section.</p>
+    </section>
+
+    <!-- Іконки з художнім оформленням -->
+    <section class="art-icons-section">
+        <h2 class="google-font">Our Services</h2>
+        <div class="services">
+            <div class="service-item">
+                <i class="las la-code"></i>
+                <h3>Web Development</h3>
+                <p>Professional website creation and optimization.</p>
+            </div>
+            <div class="service-item">
+                <i class="las la-paint-brush"></i>
+                <h3>Graphic Design</h3>
+                <p>Custom designs to fit your brand.</p>
+            </div>
+            <div class="service-item">
+                <i class="las la-mobile"></i>
+                <h3>Mobile Apps</h3>
+                <p>Development of native and hybrid mobile applications.</p>
+            </div>
+        </div>
+        <!-- Опис використання іконок Line Awesome -->
+        <p class="font-description">In this section, icons are provided by <strong>Line Awesome</strong>, which is similar to Font Awesome. These icons are fully scalable and styled using CSS properties like color and size.</p>
+    </section>    
+</body>
+
+</html>
